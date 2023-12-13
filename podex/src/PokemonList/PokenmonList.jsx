@@ -1,6 +1,7 @@
 import { useEffect, useState, } from "react";
 import axios from 'axios'
 import PokemonPrint from "./pokemon1";
+import './pokemonList.css'
 
 function PokemonList(){
     const [pokemonList,setpokemonList] = useState([])
@@ -31,8 +32,14 @@ function PokemonList(){
     
     return (
         <div>
-            PokemonList
+            <div className="pokemon-wrapper">
+            
             {(isLoadding)?'Loading':pokemonList.map((p)=> <PokemonPrint name={p.name} image={p.image}key={p.id}/>)}
+            </div>
+            <div  className="button">
+                <button id="btn">prev</button>
+                <button id="btn">next</button>
+            </div>
           
         </div>
     )

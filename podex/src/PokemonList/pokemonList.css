@@ -1,0 +1,35 @@
+.pokemon-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 35px;
+    margin-top: 40px;
+   
+      
+}
+#btn{
+    padding: 0.5rem;
+    height: 40px;
+    width: 100px;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: large;
+    background-color: 	 #ff80bf;
+    
+    
+}
+#btn:hover{
+    height: 45px;
+    width: 150px;
+    color: aqua;
+    font-size: 25px;
+}
